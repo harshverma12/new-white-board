@@ -1,4 +1,4 @@
-# Draw It!
+ 
 
 ## Description
 **Draw It** is a web programming project made with `Node.js` on the server side and plain `HTML`, `CSS` and `JS` on the client side.
