@@ -27,22 +27,4 @@ The application uses `socket.io` for real time chat communication. All data is s
 6. Run `$ echo 'DB_URI=<YOUR_URI>' > .env` in the main directory, where `<YOUR_URI>` is the connection URI for your database
 7. Run `$ node app.js` in the main directory to start the server on `0.0.0.0:7070`
 8. Visit `http://localhost:7070` in your browser
-
-## Some screenshots
-### Front page
-![Front Page](./images/index.png)
-
-### Account page
-![Account Page](./images/account.png)
-
-### Joining an empty room
-![Room](./images/room1.png)
-
-### Another user joining the room
-![Room](./images/room2.png)
-
-### Drawing on the board
-![Room](./images/room3.png)
-
-### Drawing with touch events on mobile displays
-![Room Mobile](./images/room_mobile.png)
+ 
