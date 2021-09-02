@@ -1,0 +1,37 @@
+{
+  "name": "draw-it",
+  "version": "1.0.0",
+  "description": "Collaborative white board application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshverma12/new-white-board"
+  },
+  "keywords": [
+    "node.js",
+    "express"
+  ],
+  "author": "Harsh Verma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harshverma12/new-white-board/issues"
+  },
+  "homepage": "https://github.com/harshverma12/new-white-board",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.6.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.2",
+    "http": "0.0.1-security",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.12",
+    "socket.io": "^4.1.2"
+  }
+}

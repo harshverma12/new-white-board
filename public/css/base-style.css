@@ -1,0 +1,234 @@
+:root {
+    --bg-color: #ffffff;
+    --light-blue:rgb(56, 159, 219);
+    --blue: rgb(102, 154, 204);
+    --dark-blue: rgb(243, 117, 138);
+    /* --dark-blue:   #F67280(196, 72, 159); */
+    --gray: rgb(200, 200, 200);
+    --dark-gray: rgb(150, 150, 150);
+    --light-gray: rgb(240, 240, 240);
+    --pencil-tip-color: rgb(255, 203, 155);
+    --highlight: rgb(211, 0, 70);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+b {
+    color: var(--dark-blue);
+    font-family: 'Pacifico', cursive;
+}
+
+legend {
+    padding-right: 5px;
+    padding-left: 5px;
+    color: var(--dark-blue);
+}
+
+.error-placeholder-color::placeholder {
+    color:   #F67280;
+}
+
+.hidden {
+    display: none;
+    max-width: 0;
+    max-height: 0;
+}
+
+.logo-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    max-height: 80px;
+    /* background-color: var #E4287C; */
+    background-color: #F67280; 
+    transition: background-color 0.75s ease-in-out;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.534);
+}
+
+.logo-header:hover {
+    /* background-color: var(--blue); */
+    background-color: #439ce6 ;
+}
+
+.logo-header:hover .logo {
+    padding-left: 100px;
+}
+
+.logo-header:hover .logo img{
+    transform: rotate(540deg);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    transition: padding-left 1s ease-in-out;
+}
+
+.logo img{
+    width: 60px;
+    margin: 15px;
+    transition:  transform 0.75s ease-in-out;
+}
+
+.title {
+    font-size: 300%;
+}
+
+.container {
+    display: flex;
+    position: fixed;
+    top: 80px;
+    bottom: 35px;
+    right: 0;
+    left: 0;
+    overflow: auto;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+@media screen and (min-width: 900px) {
+    .container>* {
+        padding-top: 30px !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container>* {
+        padding-top: 10px !important;
+    }
+	.container {
+		flex-direction: column !important;
+	}	
+	
+	.container>div {
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+		width: calc(100% - 10px) !important;
+	}
+}
+
+@media screen and (max-width: 500px) {
+    .logo img{
+        width: 30px;
+        height: 30px;
+        margin: 15px;
+        transition:  transform 0.75s ease-in-out;
+    }
+    .title {
+        font-size: 200%;
+    }
+    .logo-header {
+        height: 50px;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 35px;  
+    color: var(--bg-color);
+    background-color: var(--dark-blue);
+}
+
+footer #copyright {
+    margin: 5px;
+    text-align: center;
+}
+
+form {
+    text-align: right;
+}
+
+form fieldset legend {
+    font-weight: bold;
+    text-align: center;
+    border-left: 2px solid var #F67280;
+    border-right: 2px solid var #F67280;
+}
+
+.form-buttons {
+    text-align: center;
+}
+
+input {
+    padding: 5px;
+    outline: none;
+    width: 50%;
+}
+
+input[type="color"] {
+    padding: 0;
+    width: 60px;
+    align-self: center;
+    border: none;
+}
+
+input[type="submit"], input[type="button"]  {
+    border: 2px solid var(--dark-blue);
+    /* border: 2px solid var #F67280; */
+    background-color: transparent;
+    color: var(--dark-blue);
+    /* color: var #F67280; */
+    font-weight: bold;
+    border-radius: 7px;
+    width: 200px;
+    height: 35px;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+    animation-name: button-anim;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button-anim {
+    to {
+        background-color: var(--dark-blue);
+        background-color: var(--dark-blue);
+      
+        color: var(--bg-color);
+    }
+}
+
+.index-error-message {
+    position: absolute;
+    padding: 15px;
+    max-width: 300px;
+    min-width: 200px;
+    margin-left: calc(50% - 150px);
+    margin-top: 200px;
+    z-index: 1000;
+    background-color: var(--highlight);
+    color: var(--bg-color);
+    border: 2px solid var(--highlight);
+    border-radius: 7px;
+}
+
+.close-error-button {
+    margin-left: 15px;
+    color: var(--bg-color);
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-error-button:hover {
+    color: var(--dark-blue);
+}
