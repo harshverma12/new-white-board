@@ -20,7 +20,7 @@ module.exports = {
         }
         res.render('index', {
             loadMenuBar: false,
-            pageTitle: "Collaborative Whiteboard!",
+            pageTitle: "Collaborative Whiteboard",
             styleList: ["index-style.css"],
             currentPageLink: "index",
             containerId: "front-page-container",
