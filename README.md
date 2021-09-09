@@ -1,7 +1,7 @@
  
 
 ## Description
-**Draw It** is a web programming project made with `Node.js` on the server side and plain `HTML`, `CSS` and `JS` on the client side.
+ It is a web programming project made with `Node.js` on the server side and plain `HTML`, `CSS` and `JS` on the client side.
 
 The application uses `socket.io` for real time chat communication. All data is saved in a `MongoDB` database in the cloud (using [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) and `mongoose` for database access).
 
