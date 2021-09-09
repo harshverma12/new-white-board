@@ -25,6 +25,6 @@ The application uses `socket.io` for real time chat communication. All data is s
     * Alternatively, install `MongoDB` locally
 5. Get the connection URI for the database
 6. Run `$ echo 'DB_URI=<YOUR_URI>' > .env` in the main directory, where `<YOUR_URI>` is the connection URI for your database
-7. Run `$ node app.js` in the main directory to start the server on `0.0.0.0:7070`
+7. Run `$ node app.js` in the main directory to start the server  
 8. Visit `http://localhost:7070` in your browser
  
