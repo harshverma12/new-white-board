@@ -13,7 +13,6 @@ The application uses `socket.io` for real time chat communication. All data is s
 * Real-time chat with customizable username colors
 * User statistics like the number of messages sent
 * Real-time collaborative drawing board
-* Support for touch screen drawing
 * Ability to create/delete rooms and set a maximum amount of members
 * Ability to search rooms by name
 
